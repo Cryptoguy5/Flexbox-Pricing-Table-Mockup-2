@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Libre+Baskerville&family=Nunito+Sans:opsz@6..12&family=Open+Sans&family=Oswald&family=PT+Serif&family=Sono&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-image: url(./pexels-pixabay-2150.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+  }
+
+  .pricing-plan {
+    flex: 1;
+    max-width: 300px;
+    max-height: 600px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    padding-bottom: 10px;
+  }
+
+  .plan-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    color: #fff;
+    }
+
+  .plan-price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 20px;
+    color: #fff;
+}
+
+  .plan-features {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .plan-features li {
+    margin-bottom: 20px;
+  }
+
+  .plan-button {
+    padding: 10px;
+    background-color: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+  }
+
+  span {
+    font-size: 20px;
+  }
+
+  .one {
+    background-color: #2E4374;
+    }
+
+  .oneA {
+    background-color: #7C81AD;
+
+    }
+
+  .two {
+    background-color: #D9662E;
+  }
+
+  .twoA {
+    background-color: #FF7724 ;
+  }
+
+  .three {
+    background-color: #E0AF2C;
+  }
+
+  .threeA {
+    background-color: #E1D42C;
+  }
+
+  hr {
+    background-color: #FAF0E6;
+    height:2px;
+    border: none;
+  }
+  @media (max-width: 1250px) {
+   .pricing-container {
+    flex-direction: column;
+    height: 100%;
+     } 
+  .pricing-plan {
+    width: 100%;
+  }
+  }
+
+ </style>
+</head>
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title one">Private Plan Basic</div>
+      <div class="plan-price oneA"><span>$11.99</span><br />per month</div>
+      <ul class="plan-features">
+        <li>✅ 10GB Storage</li><hr />
+        <li>✅ 20 Domain Names</li><hr />
+        <li>🚫 5 Email Address</li><hr />
+        <li>🚫 70 GB monthly bandwidth</li><hr />
+        <li>🚫 Professional Support</li>
+       </ul>
+       <button class="plan-button">Sign-up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title two">Private Plan Plus</div>
+        <div class="plan-price twoA"><span>$19.99</span><br />per month</div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li><hr />
+          <li>✅ 20 Domain Names</li><hr />
+          <li>✅ 5 Email Address</li><hr />
+          <li>🚫 70 GB monthly bandwidth</li><hr />
+          <li>🚫 Professional Support</li>
+         </ul>
+         <button class="plan-button">Sign-up</button>
+        </div>
+        <div class="pricing-plan">
+          <div class="plan-title three">Private Plan Extra</div>
+          <div class="plan-price threeA"><span>$49.99</span><br />per month</div>
+          <ul class="plan-features">
+            <li>✅ 10GB Storage</li><hr />
+            <li>✅ 20 Domain Names</li><hr />
+            <li>✅ 5 Email Address</li><hr />
+            <li>✅ 70 GB monthly bandwidth</li><hr />
+            <li>✅ Professional Support</li>
+           </ul>
+           <button class="plan-button">Sign-up</button>
+          </div>
+   </div>
+</body>
+</html>
